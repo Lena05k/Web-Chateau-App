@@ -14,13 +14,14 @@
     "webpack": "^5.81.0"
   },
   "scripts": {
+    "build:tailwind": "tailwindcss build src/input.css -o src/styles.css",
+    "prod:tailwind": "NODE_EVN=production build src/input.css -o src/styles.css",
+    "watch:tailwind": "tailwindcss build src/input.css -o src/styles.css --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:tailwind": "tailwindcss build src/input.css -o src/styles.css",
-    "prod:tailwind": "NODE_EVN=production build src/input.css -o src/styles.css",
-    "watch:tailwind": "tailwindcss build src/input.css -o src/styles.css --watch"
+
   },
   "eslintConfig": {
     "extends": [
