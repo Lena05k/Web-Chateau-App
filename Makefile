@@ -7,6 +7,4 @@ tailwind:
 prod:tailwind:
 	npm run prod:tailwind
 
-lint:
-	npx eslint .
 
