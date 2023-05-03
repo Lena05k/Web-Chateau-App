@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+    @font-face {
+        font-family: 'Gilroy';
+        src: url('assets/fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('assets/fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Gilroy';
+        src: url('assets/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('assets/fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Gilroy';
+        src: url('assets/fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('assets/fonts/Gilroy/Gilroy-Semibold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Gilroy';
+        src: url('assets/fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('assets/fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Gilroy';
+        src:  url('assets/fonts/Gilroy/Gilroy-SemiboldItalic.woff2') format('woff2'),
+        url('assets/fonts/Gilroy/Gilroy-SemiboldItalic.woff') format('woff');
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+@layer utilities {
+    @variants responsive {
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .link-underlines {
+            text-decoration: none;
+
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+        }
+    }
+}
