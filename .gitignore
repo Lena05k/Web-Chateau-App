@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 /keys
+dist/
 .pnp.js
 .eslintrc.yml
 
