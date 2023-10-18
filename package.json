@@ -23,6 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "built:webpack": "NODE_ENV=production webpack --mode production",
     "build:tailwind": "tailwindcss build src/input.css -o public/styles.css",
     "prod:tailwind": "NODE_EVN=production build src/input.css -o public/styles.css",
     "watch:tailwind": "tailwindcss build src/input.css -o public/styles.css --watch"
@@ -53,6 +54,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
